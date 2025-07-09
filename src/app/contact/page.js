@@ -75,7 +75,7 @@ export default function ContactPage() {
                                 <div className="ml-4">
                                     <h3 className="text-lg font-semibold text-gray-800">Email</h3>
                                     <p className="text-gray-600">Reach out for any inquiries.</p>
-                                    <a href="mailto:qodemorpconsulting@gmail.com" className="text-blue-600 hover:underline">iqodemorpconsulting@gmail.com</a>
+                                    <a href="mailto:qodemorpconsulting@gmail.com" className="text-blue-600 hover:underline">qodemorpconsulting@gmail.com</a>
                                 </div>
                             </div>
                             <div className="flex items-start">
@@ -83,14 +83,14 @@ export default function ContactPage() {
                                 <div className="ml-4">
                                     <h3 className="text-lg font-semibold text-gray-800">Phone</h3>
                                     <p className="text-gray-600">Give us a call.</p>
-                                    <a href="tel:+1234567890" className="text-blue-600 hover:underline">+1 (234) 567-890</a>
+                                    <a href="tel:+234 802 416 7380" className="text-blue-600 hover:underline">+234 802 416 7380</a>
                                 </div>
                             </div>
                              <div className="flex items-start">
                                 <div className="flex-shrink-0 bg-blue-100 text-blue-600 p-3 rounded-full"><MapPin size={24} /></div>
                                 <div className="ml-4">
                                     <h3 className="text-lg font-semibold text-gray-800">Office Address</h3>
-                                    <p className="text-gray-600">17A Colorado</p>
+                                    <p className="text-gray-600">17A Colorado Street, Maitama, Abuja</p>
                                 </div>
                             </div>
                          </div>

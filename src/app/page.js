@@ -1,4 +1,29 @@
-'use client';
+export const metadata = {
+  title: 'qodemorph consulting | Innovative IT Solutions',
+  description: 'qodemorph consulting delivers expert IT strategy, cybersecurity, cloud, web development, and data analysis to help your business thrive.',
+  openGraph: {
+    title: 'qodemorph consulting | Innovative IT Solutions',
+    description: 'qodemorph consulting delivers expert IT strategy, cybersecurity, cloud, web development, and data analysis to help your business thrive.',
+    url: 'https://yourdomain.com/',
+    siteName: 'qodemorph consulting',
+    images: [
+      {
+        url: '/qodeT.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'qodemorph consulting | Innovative IT Solutions',
+    description: 'qodemorph consulting delivers expert IT strategy, cybersecurity, cloud, web development, and data analysis to help your business thrive.',
+    images: ['/qodeT.png'],
+  },
+};
+
 import Link from 'next/link';
 import { Shield, Code, Cloud, Star, ArrowRight } from 'lucide-react';
 import AnimatedSection from '@/components/AnimatedSection';

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import Image from 'next/image';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,7 +15,7 @@ export default function Header() {
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
     { href: '/services', label: 'Services' },
-    { href: '/contact', label: 'Contact' },
+    { href: '/contact', label: 'Contact', isButton: true },
   ];
 
   return (
@@ -36,20 +36,31 @@ export default function Header() {
           </Link>
 
           {/* ---------- Desktop nav ---------- */}
-          <nav className="hidden md:flex space-x-8">
-            {navLinks.map(({ href, label }) => (
-              <Link
-                key={href}
-                href={href}
-                className={`font-medium transition-colors duration-300 ${
-                  pathname === href ||
-                  (href === '/services' && pathname.startsWith('/services'))
-                    ? 'text-blue-600'
-                    : 'text-gray-700 hover:text-blue-600'
-                }`}
-              >
-                {label}
-              </Link>
+          <nav className="hidden md:flex items-center space-x-8">
+            {navLinks.map(({ href, label, isButton }) => (
+              isButton ? (
+                <Link
+                  key={href}
+                  href={href}
+                  className="inline-flex items-center h-10 px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 hover:-translate-y-0.5 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                >
+                  {label}
+                  <ArrowRight className="ml-2" size={18} />
+                </Link>
+              ) : (
+                <Link
+                  key={href}
+                  href={href}
+                  className={`font-medium transition-colors duration-300 ${
+                    pathname === href ||
+                    (href === '/services' && pathname.startsWith('/services'))
+                      ? 'text-blue-600'
+                      : 'text-gray-700 hover:text-blue-600'
+                  }`}
+                >
+                  {label}
+                </Link>
+              )
             ))}
           </nav>
 

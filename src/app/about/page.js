@@ -2,8 +2,29 @@ import AnimatedSection from '@/components/AnimatedSection';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'About Us | Tech Solutions',
-  description: 'Learn about our mission, vision, and the expert team at Tech Solutions dedicated to driving business success through technology.',
+  title: 'About Us | qodemorph consulting',
+  description: 'Learn about our mission, vision, and the expert team at qodemorph consulting dedicated to driving business success through technology.',
+  openGraph: {
+    title: 'About Us | qodemorph consulting',
+    description: 'Learn about our mission, vision, and the expert team at qodemorph consulting dedicated to driving business success through technology.',
+    url: 'https://yourdomain.com/about',
+    siteName: 'qodemorph consulting',
+    images: [
+      {
+        url: '/qodeT.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Us | qodemorph consulting',
+    description: 'Learn about our mission, vision, and the expert team at qodemorph consulting dedicated to driving business success through technology.',
+    images: ['/qodeT.png'],
+  },
 };
 
 export default function AboutPage() {

@@ -5,8 +5,29 @@ import AnimatedSection from '@/components/AnimatedSection';
 import { allServices } from '@/data/services';
 
 export const metadata = {
-  title: 'Our Services | Tech Solutions',
+  title: 'Our Services | qodemorph consulting',
   description: 'Explore our comprehensive IT services, including cybersecurity, cloud & DevOps, web development, data analysis, and more.',
+  openGraph: {
+    title: 'Our Services | qodemorph consulting',
+    description: 'Explore our comprehensive IT services, including cybersecurity, cloud & DevOps, web development, data analysis, and more.',
+    url: 'https://yourdomain.com/services',
+    siteName: 'qodemorph consulting',
+    images: [
+      {
+        url: '/qodeT.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Our Services | qodemorph consulting',
+    description: 'Explore our comprehensive IT services, including cybersecurity, cloud & DevOps, web development, data analysis, and more.',
+    images: ['/qodeT.png'],
+  },
 };
 
 export default function ServicesPage() {

@@ -9,12 +9,55 @@ export async function generateMetadata({ params }) {
   const service = allServices.find(s => s.id === params.serviceId);
   if (!service) {
     return {
-      title: 'Service Not Found',
+      title: 'Service Not Found | qodemorph consulting',
+      description: 'The requested service could not be found at qodemorph consulting.',
+      openGraph: {
+        title: 'Service Not Found | qodemorph consulting',
+        description: 'The requested service could not be found at qodemorph consulting.',
+        url: `https://yourdomain.com/services/${params.serviceId}`,
+        siteName: 'qodemorph consulting',
+        images: [
+          {
+            url: '/qodeT.png',
+            width: 1200,
+            height: 630,
+          },
+        ],
+        locale: 'en_US',
+        type: 'website',
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: 'Service Not Found | qodemorph consulting',
+        description: 'The requested service could not be found at qodemorph consulting.',
+        images: ['/qodeT.png'],
+      },
     };
   }
   return {
-    title: `${service.title} | Tech Solutions`,
+    title: `${service.title} | qodemorph consulting`,
     description: service.description,
+    openGraph: {
+      title: `${service.title} | qodemorph consulting`,
+      description: service.description,
+      url: `https://yourdomain.com/services/${service.id}`,
+      siteName: 'qodemorph consulting',
+      images: [
+        {
+          url: '/qodeT.png',
+          width: 1200,
+          height: 630,
+        },
+      ],
+      locale: 'en_US',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${service.title} | qodemorph consulting`,
+      description: service.description,
+      images: ['/qodeT.png'],
+    },
   };
 }
 

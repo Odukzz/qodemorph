@@ -75,7 +75,7 @@ export default function ContactPage() {
                                 <div className="ml-4">
                                     <h3 className="text-lg font-semibold text-gray-800">Email</h3>
                                     <p className="text-gray-600">Reach out for any inquiries.</p>
-                                    <a href="mailto:qodemorpconsulting@gmail.com" className="text-blue-600 hover:underline">qodemorpconsulting@gmail.com</a>
+                                    <a href="mailto:qodemorphconsulting@gmail.com" className="text-blue-600 hover:underline">qodemorphconsulting@gmail.com</a>
                                 </div>
                             </div>
                             <div className="flex items-start">

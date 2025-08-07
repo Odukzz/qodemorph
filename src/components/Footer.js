@@ -1,3 +1,5 @@
+'use client';
+
 import { Mail, Phone, MapPin, Instagram, ArrowUp, Sparkles } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 import Link from 'next/link';
